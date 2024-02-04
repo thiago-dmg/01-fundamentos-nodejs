@@ -1,4 +1,4 @@
-Node
+Node 1
 
 Adição de tipos
 
@@ -9,3 +9,22 @@ o createServer recebe request e response
 Instalação e uso do HTTPIE
 
 Uso do script "dev": "node --watch src/server.js"
+
+Node 2
+
+Aplicação Stateful sempre tem informação guardada em memória, ou seja, depende das informações que são salvas
+
+Aplicação Stateless não salva nada em memória, salva em dispositivos externos.
+
+Utilizar o JSON.stringify para o GET
+ 
+
+
+
+
+
+
+
+
+
+
