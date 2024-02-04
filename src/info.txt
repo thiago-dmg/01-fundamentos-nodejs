@@ -1,0 +1,11 @@
+Node
+
+Adição de tipos
+
+npm install --save-dev @types/node
+
+o createServer recebe request e response
+
+Instalação e uso do HTTPIE
+
+Uso do script "dev": "node --watch src/server.js"
