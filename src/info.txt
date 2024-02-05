@@ -17,7 +17,42 @@ Aplicação Stateful sempre tem informação guardada em memória, ou seja, depe
 Aplicação Stateless não salva nada em memória, salva em dispositivos externos.
 
 Utilizar o JSON.stringify para o GET
+
+Como o FrontEnd vai saber se devolveu a resposta no formato de JSON
+Cabeçalhos são metadados, informações adicionais.
  
+
+Streams
+
+Ler pequenas partes de algo e já conseguir trabalhar com os dados mesmo sem ler o arquivo completo
+
+stdin o que o usuário digita
+stdout o retorno
+
+Sempre utilizar o buffer no parâmetro
+
+Readable precisa obrigatoriamente do _read()
+Writable precisa obrigatoriamente do chunk, encode, callback
+
+chunk é o pedaço do que foi lido
+encode é como a informação está codificada
+callback é uma função que a stream de scrita precisa chamar
+
+Trabalhamos com Stream de leitura, de escrita e transformação
+
+Stream Transformação sempre vai interconectar outras streams
+
+const transformed = Number(chunk.toString()) * - 1
+
+callback(null, Buffer.from(String(transformed)))
+
+
+
+
+
+
+
+
 
 
 
