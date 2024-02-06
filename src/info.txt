@@ -47,6 +47,11 @@ const transformed = Number(chunk.toString()) * - 1
 callback(null, Buffer.from(String(transformed)))
 
 
+No método fetch é importante passar duplex: true, pois o fetch precisa saber que está lidando com um stream bidirecional.
+
+buffer é uma representação de um espaço na memória do computador
+
+Criando middleware de JSON
 
 
 
